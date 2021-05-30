@@ -85,17 +85,18 @@
         </form>
 
         <form id="room" action="" method="get">
-          Room Type <br>
+          <h2>Type</h2>  
           <label class="radio-inline">
-            <input type="radio" name="junior" >Junior Suite
+            <input type="radio" name="type" >Junior Suite
           </label>
           <label class="radio-inline">
-            <input type="radio" name="standard">Standard Room
+            <input type="radio" name="type">Standard Room
           </label>
           <label class="radio-inline">
-            <input type="radio" name="superior">Superior Room
-          </label><br><br>
-          Number 0f guest
+            <input type="radio" name="type">Superior Room
+          </label>
+          <br><br>
+          <h2>Number 0f guest</h2>
         </form>
       
         <select id="people">
@@ -106,17 +107,33 @@
         </select>
 
         <form id="cleaning" action="" method="get">
-          Services <br>
+          <h2>Services</h2> 
           <label class="radio-inline">
-            <input type="radio" name="cleaning" >Cleaning Room
+            <input type="checkbox" name="cleaning" >&emsp;Cleaning Room(500 THB)
           </label><br>
           <label class="radio-inline">
-            <input type="radio" name="cleaning" >Cleaning Room
+            <input type="checkbox" name="cleaning" >&emsp;Extra Bed(700 THB)
           </label><br>
           <label class="radio-inline">
-            <input type="radio" name="cleaning" >Cleaning Room
+            <input type="checkbox" name="cleaning" >&emsp;Break Fast(500 THB/PEOPLE)
           </label>
+          <select id="people1">
+            <option value="">NUMBER</option>
+            <option value="people">1</option>
+            <option value="people">2</option>
+            <option value="people">3</option>
+          </select>
+        
         </form>
+
+        <form id="promotion" action="" method="get">
+          <h2>Promotion Code&emsp;</h2>
+          <input type="text" id="code" name="Promotion Code">
+
+        </form>
+
+      
+       
 
         <div class="next">
           <button onclick="window.location.href='/book_hotel2.html'">Next</button>
